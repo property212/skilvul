@@ -1,0 +1,5 @@
+https://www.pivale.co/blog/10-lessons-from-drupal-8-pattern-lab-emulsify
+https://gauravmahlawat.github.io/integrate-pattern-lab-with-drupal.html
+https://www.drupaladicto.com/curso/prerrequisitos-para-trabajar-con-emulsify-y-pattern-lab-en-drupal-9
+https://docs.emulsify.info/resources/help-and-support/tutorials-videos
+https://www.youtube.com/watch?v=AOO8oUbreEc
