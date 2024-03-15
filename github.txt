@@ -1,0 +1,2 @@
+git config user.name "Pejuang Kebenaran"
+git config credential.username "pjuangkebenarann@gmail.com"
