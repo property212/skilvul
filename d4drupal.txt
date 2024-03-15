@@ -1,0 +1,16 @@
+docker run -d --name some-postgres --network some-network -e POSTGRES_DB=drupal	-e POSTGRES_USER=user -e POSTGRES_PASSWORD=pass postgres:11
+
+docker run -d --name some-mysql --network some-network -e MYSQL_DATABASE=drupal -e MYSQL_USER=user -e MYSQL_PASSWORD=password -e MYSQL_ROOT_PASSWORD=password mysql:5.7
+
+docker run -d --name some-mysql --network some-network -e MYSQL_DATABASE=drupal -e MYSQL_USER=user -e MYSQL_PASSWORD=password -e MYSQL_ROOT_PASSWORD=password mysql:5.7
+
+
+docker run -d --name mysqldb -e MYSQL_ROOT_PASSWORD=root mysql:latest
+
+docker run --name drupal1 -p 8080:80 --link mysqldb -e MYSQL_ROOT_PASSWORD=root -d drupal 
+
+docker ps
+
+access drupal
+https://www.youtube.com/watch?v=RDZ2URjN7nc&t=266s
+

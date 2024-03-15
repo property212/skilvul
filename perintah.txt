@@ -1,0 +1,20 @@
+
+
+dicoding
+
+docker container create ubuntu
+docker images
+
+
+docker start brave_hypatia
+docker ps --all
+docker exec -it brave_hypatia
+docker stop brave_hypatia
+docker container rm condescending_perlman
+docker rm ubuntu:latest
+
+docker run -i -t -d nginx /bin/bash
+docker exec -it unruffled_archimedes /bin/bash
+docker image rm nginx:latest
+docker container rm unruffled_archimedes
+docker image rm nginx:latest

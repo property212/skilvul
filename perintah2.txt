@@ -1,0 +1,16 @@
+docker run -d `--name mysql-db `--network todo-app --network-alias mysql `-v todo-mysql-data:/var/lib/mysql `-e MYSQL_ROOT_PASSWORD=dicoding `-e MYSQL_DATABASE=todo-db `mysql:5.7
+
+docker run -dp 3000:3000 --name todo-app -w /app -v "$(pwd):/app" --network todo-app -e MYSQL_HOST=mysql -e MYSQL_USER=root -e MYSQL_PASSWORD=dicoding -e MYSQL_DB=todo-db node:12-alpine sh -c "yarn install && yarn run dev"
+
+docker rm -f todo-app mysql-db | docker volume rm todo-db todo-mysql-data | docker network rm todo-app | docker image rm todo-app:v1 todo-app:v2 mysql:5.7 node:12-alpine
+
+docker stop my-nginx | docker container rm my-nginx | docker image rm nginx-hello-world localhost:5000/nginx-hello-world
+
+docker container stop registry my-nginx | docker container rm -v registry my-nginx
+
+
+https://jsonformatter.org/yaml-validator#Sample
+
+
+
+
